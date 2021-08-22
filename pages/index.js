@@ -1,4 +1,5 @@
 import MainMenu from '../scenes/MainMenu';
+import Raider from '../models/Raider'
 
 const Home = (props) => {
     return (

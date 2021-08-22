@@ -1,5 +1,6 @@
 import Container from './Container';
 import MenuButton from './MenuButton';
+import Link from 'next/link';
 
 const Menu = (props) => {
     const menuX = 352;
@@ -10,7 +11,7 @@ const Menu = (props) => {
             <img src="menu/menu_block.png" />
             <Container x={50} y={50} direction='column'>
                 <MenuButton text="PLAY TUTORIAL"/>
-                <MenuButton text="DUNGEON AND STABLE"/>
+                <Link href='/stable'><a><MenuButton text="DUNGEON AND STABLE"/></a></Link>
                 <MenuButton text="DRAGONS AND RAIDS"/>
                 <MenuButton text="INSTRUCTIONS"/>
                 <MenuButton text="WATCH INTRODUCTION"/>
